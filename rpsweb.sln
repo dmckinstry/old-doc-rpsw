@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "tmpExpress", "tmpExpress.njsproj", "{5E6772C9-5147-4F10-AACA-408579CA9974}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "rpsweb", "rpsweb.njsproj", "{5E6772C9-5147-4F10-AACA-408579CA9974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
