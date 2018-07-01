@@ -1,0 +1,20 @@
+﻿extends layout
+
+block scripts
+  script(type='text/javascript', src='/javascripts/simulateRPS.js')
+  script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+
+block content
+  p Welcome to #{title}
+
+  div Team #1: 
+    input(type="text", id='team1Text', value='Team 1')
+
+  div Team #2: 
+    input(type="text", id='team2Text', value='Team 2')
+
+  button(onClick='startGame()') Run the simulator!
+
+  p(id='resultsText') Click the button to see a simulated run
+
+
