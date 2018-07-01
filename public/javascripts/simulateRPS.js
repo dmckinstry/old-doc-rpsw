@@ -1,12 +1,8 @@
 ﻿'use strict';
-//const gameManagerHost = process.env.MANAGER_SERVICE_HOST || 'http://tmpmanagerservice.azurewebsites.net';
-const gameManagerHost = 'http://tmpmanagerservice.azurewebsites.net';
+
 const startGamePath = '/api/game/create';
 const scoreRoundPath = '/api/game/score';
 const finishGamePath = '/api/game/complete';
-
-// const playerSimulatorHost = process.env.RPS_SERVICE_HOST || 'http://tmpcore.azurewebsites.net';
-const playerSimulatorHost = 'http://tmpcore.azurewebsites.net';
 const getPlayPath = '/api/rpssimulator';
 
 const rpsValues = ['Rock', 'Paper', 'Scissors'];

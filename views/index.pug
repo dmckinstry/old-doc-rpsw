@@ -3,6 +3,9 @@
 block scripts
   script(type='text/javascript', src='/javascripts/simulateRPS.js')
   script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+  script.
+    const gameManagerHost = '#{process.env.MANAGER_SERVICE_HOST || 'http://tmpmanagerservice.azurewebsites.net'}';
+    const playerSimulatorHost = '#{process.env.RPS_SERVICE_HOST || 'http://tmpcore.azurewebsites.net'}';
 
 block content
   p Welcome to #{title}

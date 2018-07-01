@@ -1,11 +1,11 @@
 {
-  "name": "tmp-express",
+  "name": "rpsweb",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node app"
   },
-  "description": "tmpExpress",
+  "description": "Rock Paper Scissors game simulator",
   "author": {
     "name": "davemcki"
   },
@@ -19,6 +19,6 @@
     "serve-favicon": "^2.3.0"
   },
   "engines": {
-    "node": "~6.10.x"
+    "node": "~8.11.x"
   }
 }
