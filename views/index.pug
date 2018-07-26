@@ -8,7 +8,7 @@ block scripts
     const playerSimulatorHost = '#{process.env.RPS_SERVICE_HOST || 'http://localhost:5000'}';
 
 block content
-  p Welcome to #{title}
+  p Welcome to #{title} - #{process.env.APP_ENV}
 
   div Team #1: 
     input(type="text", id='team1Text', value='Team 1')
