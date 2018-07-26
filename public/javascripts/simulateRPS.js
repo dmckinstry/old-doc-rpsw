@@ -47,7 +47,7 @@ function startGame() {
         .then((result) => {
             gameId = result;
             setResultsText('Game ID = ' + gameId);
-            this.simulateRound();
+            simulateRound();
         });
 }
 
