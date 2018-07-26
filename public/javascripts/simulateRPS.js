@@ -32,25 +32,6 @@ function appendResultsText(text) {
     setResultsText(newText);
 }
 
-function startGame() {
-    team1Name = $('#team1Text').val();
-    team2Name = $('#team2Text').val();
-
-    var url = new URL(startGamePath, gameManagerHost);
-
-    url.searchParams.append('team1', team1Name);
-    url.searchParams.append('team2', team2Name);
-    url.searchParams.append('count', 5);
-
-    fetch(url)
-        .then((resultPromise) => resultPromise.json())
-        .then((result) => {
-            gameId = result;
-            setResultsText('Game ID = ' + gameId);
-            this.simulateRound();
-        });
-}
-
 function simulateRound() {
     var url = new URL(getPlayPath, playerSimulatorHost);
     fetch(url)
@@ -81,6 +62,26 @@ function simulateRound() {
                 });
         });
 }
+
+function startGame() {
+    team1Name = $('#team1Text').val();
+    team2Name = $('#team2Text').val();
+
+    var url = new URL(startGamePath, gameManagerHost);
+
+    url.searchParams.append('team1', team1Name);
+    url.searchParams.append('team2', team2Name);
+    url.searchParams.append('count', 5);
+
+    fetch(url)
+        .then((resultPromise) => resultPromise.json())
+        .then((result) => {
+            gameId = result;
+            setResultsText('Game ID = ' + gameId);
+            simulateRound();
+        });
+}
+
 
 function scoreRound(winningTeam) {
     var url = new URL(scoreRoundPath, gameManagerHost);
